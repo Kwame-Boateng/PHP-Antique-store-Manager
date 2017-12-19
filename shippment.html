@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>First Mobile Example</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="themes/jcustom1.min.css" />
+	<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+	<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+    
+    <!-- Start of Home page -->
+    
+    <div data-role = "page" id = "passwordpage">
+    <div data-role = "header" data-theme = "a">
+        <h1>Shipment</h1>
+        </div>
+  
+    <div data-role = "content">
+       
+
+        <div style = "margin:30px">
+            
+            <b>Email:</b> <a href = "mailto:people@fake.com">people@findstuff.com</a> <br><br>
+               
+               <form action = "addshp.php" method = "post">
+                  <label>Shipping Company:</label><input type = "text" name = "shp_company" class = "box"/><br /><br />
+                   <label>Shipping Number:</label><input type = "text" name = "shp_number" class = "box"/><br /><br />
+                   <label>Shipping Date:</label><input type = "text" name = "shp_date" class = "box"/><br /><br />
+                   <label>Customer ID:</label><input type = "text" name = "cust_id" class = "box"/><br /><br />
+                  <input type = "submit" value = " Submit "/><br />
+               </form>
+               
+               <div style = "font-size:11px; color:#cc0000; margin-top:10px"><?php echo $error; ?></div>
+					
+            </div>
+        
+        
+        </div>
+        
+        
+           
+    <div data-role = "footer" data-theme = "a">
+        <div data-role = "navbar">
+            
+            <ul>
+            <li> <a href = "second.html" data-icon = "home">Home</a></li>
+            <li> <a href = "password page.html">Sign Out</a></li>
+            
+            
+            </ul>
+        
+        </div>
+
+        </div>
+    
+    
+    
+    
+
+    </div>
+    
+    <!-- End of Home page -->
+    
+    
+   
+    
+
+</body>
+</html>
